@@ -94,7 +94,10 @@ def qcluskey_build_operation(minterms, variables):
     return parse_expr(string)
 
 def qcluskey_simplify(truth_set, variables):
-    ilen = len(truth_set[0])
+    ilen = 0
+    for e in truth_set:
+        ilen = len(e)
+        break
     
     #Organizar todos los elementos del conjunto de verdad en bloques    
     #Para ello se utilizará una matriz bidimensional (una lista de listas)
