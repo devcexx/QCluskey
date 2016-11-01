@@ -1,0 +1,3 @@
+[submodule "pybexpp"]
+	path = pybexpp
+	url = https://github.com/devcexx/PyBexpp.git
