@@ -107,7 +107,7 @@ def qcluskey_simplify(truth_set, variables):
     
     #Inicializar la lista de listas con el número de bloques requeridos para
     #esta tarea
-    for i in range(0, ilen):
+    for i in range(0, ilen + 1):
         blocks.append(set())
     
     #Incluir todos los elementos en los bloques (y de paso comprobar si todos
@@ -130,7 +130,7 @@ def qcluskey_simplify(truth_set, variables):
         marked = set() #Los elementos marcados en esta iteración
         original = set() #Los elementos originales presentes en la iteración
         #Iterar los bloques desde el que tiene más unos hasta el que menos.
-        for i in range(ilen - 1, -1, -1):
+        for i in range(ilen, -1, -1):
             cblock = blocks[i] #Bloque actual
             nblock = set()
             if i - 1 >= 0:
