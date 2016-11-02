@@ -1,4 +1,21 @@
 # -*- coding: utf-8 -*-
+"""
+ This file is part of QCluskey.
+
+ QCluskey is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+
+ QCluskey is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+
+ You should have received a copy of the GNU General Public License
+ along with QCluskey.  If not, see <http://www.gnu.org/licenses/>.
+"""
+
 from pybexpp.bexpp import *
 import sys
 
@@ -180,7 +197,7 @@ def qcluskey_simplify(truth_set, variables):
     
     #Ahora, la variable dtable contendría una lista con una forma similar a
     # [[['__00'], ['_00_']], [['_00_']]]. Si cada uno de estos elementos
-    #se toma como una variable booleana, según el método de Patrick, la
+    #se toma como una variable booleana, según el método de Petrick, la
     #multiplicación de la suma de las implicaciones de cada uno de los elementos
     #debe de ser igual a uno. Es decir, si a las implicaciones anteriores
     #se les da el nombre de a, b y c respectivamente, el método de Petrick dice
